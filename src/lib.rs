@@ -42,7 +42,7 @@ pub fn collection(
         .open(path)?; // 打开文件，如果出错则返回Err
 
     // 写入内容到文件，注意这里使用了`write_all`来确保整个内容都被写入
-    file.write_all(format!("{}\t{}\t{}\t{}\n", source, target, from, to).as_bytes())?;
+    file.write_all(format!("{}\n", source.to_lowercase()).as_bytes())?;
 
     Ok(Value::Bool(true))
 }
