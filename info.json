@@ -1,0 +1,8 @@
+{
+  "id": "[plugin].com.pot-app.collection-plugin-local",
+  "plugin_type": "collection",
+  "icon": "collection.svg",
+  "display": "Local",
+  "homepage": "https://github.com/jackframework/pot-app-collection-plugin-local",
+  "needs": [{ "key": "path", "display": "生词本文件位置", "type": "input" }]
+}
